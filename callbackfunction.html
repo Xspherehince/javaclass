@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call function</title>
+
+</head>
+<body>
+<div></div>
+<script>
+    const news=[
+        {newstitle:"first Title",content:"Hello World"},
+        {newstitle:"Second Title",content:"We are learning javascript"},
+        {newstitle:"Third Title",content:"Ich lerne javascript und ein bisschen deutsch"}
+    ]
+
+    // define showNews
+    function showNews(){
+        // setTimeout(demo,2000)
+       setTimeout(()=>{
+         let result=""
+         news.forEach((post)=>{
+           result+=`<li>${post.newstitle}</li>`
+         })
+         
+         document.querySelector('div').innerHTML=result
+
+       },2000)
+    }
+    
+
+    // call showNews function
+    showNews()
+
+    // define addNews
+    // function addNews(newdata){
+    //  setTimeout(()=>{
+
+    //     news.push(newdata)
+
+    //  },3000)
+
+    // }
+
+    // addNews({newstitle:"Fourth Title",content:"Added from push method"})
+
+
+//   define addNews with callback function
+
+function addNews(newdata,callback){
+
+    setTimeout(()=>{
+        news.push(newdata)
+        // execute callback function only after adding news
+
+    },3000)
+}
+
+
+// call function addNews with callback fumction showNews
+
+addNews({newstitle:"Fourth Title",content:"Added from push method"},
+showNews)
+
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const string_value="welcome to dursikshya to ateend the javascript class"
+        // to count the length of the string use length
+        document.write(`the length of a string is ${string_value.length}<br>`)
+        // to find the position of the string in a string iuse indexOf
+
+        document.write(`the position of 'to' in string is ${string_value.indexOf('to')}<br>`)
+
+        // to find the position of last occurence of a repeated string use lastIndexOf
+        document.write(`${string_value.lastIndexOf('to')}<br>`)
+        // to change string to uppercase use UpperCase
+
+        document.write(`${string_value.toUpperCase()}<br>`)
+        // to LowerCase
+        document.write(`${string_value.toLowerCase()}`)
+
+
+    //  replace the specific string with another string
+    document.write(`${string_value.replace('javascript','css')}<br>`)
+    document.write(`${string_value.replaceAll('to','css')}`)
+
+    </script>
+</body>
+</html>

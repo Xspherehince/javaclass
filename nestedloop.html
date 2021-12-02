@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested loop</title>
+</head>
+<body>
+    <p>nested loop is the loop inside loop</p>
+    <script>
+        for(i=1;i<=5;i++){
+            for(j=1;j<=5;j++){
+                document.write(`*`)
+
+            }
+            document.write(`<br>`)
+        }
+
+        document.write(`<br>`)
+        for(k=1;k<=5;k++){
+           for(l=1;l<=k;l++){
+               document.write(`*`)
+
+           }
+           document.write(`<br>`)
+        }
+
+        document.write(`<br>`)
+        for(k=5;k<=5;k++){
+           for(l=5;l>=k;l--){
+               document.write(`*`)
+
+           }
+           document.write(`<br>`)
+        }
+
+
+        document.write(`<br>`)
+        for(k=1;k<=14;k++){
+            for(l=1;l<=k;l++){
+                
+                document.write(`&nbsp;`)
+               document.write(`* `)
+
+           }
+           document.write(`<br>`)
+        }
+
+        // for pyramid
+        for(i=1;i<=5;i++){
+            for(j=5;j>=i;j--){
+                document.write(`&nbsp;`)
+            }
+            for(k=1;k<=i;k++){
+                document.write(`*&nbsp;`)
+            }
+            document.write(`<br>`)
+        }
+        document.write(`<br>`)
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write(`&nbsp;`)
+            }
+            for(k=5;k>=i;k--){
+                document.write(`*&nbsp;`)
+            }
+            document.write(`<br>`)
+        }
+    </script>
+</body>
+</html>
